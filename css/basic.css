@@ -32,7 +32,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
 	line-height: 1;
-	color: black;
+	font-family: Verdana, Geneva, sans-serif;;
+	color: #797066;
 	background: #fcfaf4;
 }
 ol, ul {
@@ -65,6 +66,7 @@ blockquote, q {
     }
 
 #menu{
+	
 	background-color: #51473d;
 	background-image: url(pics/coffey.jpg);
 	background-repeat: no-repeat;
@@ -73,17 +75,45 @@ blockquote, q {
 	border-bottom: 1px solid #FFFFFF;
 }
 
+#menu a {
+		display: none;
+    }
+
 #topbar {
-    height: 20px;
+    height: 15px;
     background: #51473d;
     text-align: right;
+	font-size: 10px;
     color: #eae7d2;
     font-style: italic;
+    padding-top: 5px;
 }
    
 #content {
+	height: 100%;
     background: #eae7d2;
+    padding: 25px 10px 16px 10px;
 }
+
+#maincontent {
+    float: left;
+    width: 348px;
+    padding-right: 10px;
+    border-right: 1px dashed #c0c0c0;
+}
+
+#subcontent {
+    float: right;
+    width: 210px;
+}
+
+#bottomcontent {
+    padding-top: 16px;
+    clear: both;
+}
+
+
+
 
 /* HEAD MENU */
 
@@ -93,7 +123,6 @@ blockquote, q {
 	margin-left: 11px;
 
     font-size: 13px;
-    font-family: Verdana, Geneva, sans-serif;
     text-transform: capitalize;
 }
 
