@@ -102,17 +102,54 @@ blockquote, q {
     border-right: 1px dashed #c0c0c0;
 }
 
+#maincontent p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#maincontent img {
+    float: left;
+    padding-right: 5px;
+}
+
 #subcontent {
     float: right;
     width: 210px;
 }
 
+#subcontent p {
+    font-size: 11px;
+    line-height: 2;
+}
+
 #bottomcontent {
     padding-top: 16px;
+    font-size: 12px;
+    font-style: italic;
     clear: both;
 }
 
+#maincontent h1 {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 30px;
+    padding-bottom: 19px;
+}
 
+#subcontent h1 {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 20;
+    color: #51473d;
+    padding-top: 6px;
+    padding-bottom: 19px;
+}
+
+#subcontent h2 {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 14px;
+    color: #51473d;
+    padding-top: 16px;
+    padding-bottom: 5px;
+}
 
 
 /* HEAD MENU */
@@ -158,4 +195,25 @@ blockquote, q {
         color: #888076;
         background: #eae7d2;
         border-bottom: 1px solid #eae7d2;
+    }
+    
+    a:link {     
+        color:#51473d; 
+        text-decoration:none; 
+        font-size: 14px;
+    }
+    a:visited { 
+        color:#797066; 
+        text-decoration:none;
+        font-size: 14px;
+    }
+    a:hover { 
+        color:#56869D; 
+        text-decoration:underline;
+        font-size: 14px;
+    }
+    a:active { 
+        color:#56869D; 
+        text-decoration:underline;
+        font-size: 14px;
     }
