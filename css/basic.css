@@ -24,6 +24,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-size: 100%;
 	font-family: inherit;
 	vertical-align: baseline;
+	-webkit-font-smoothing:antialiased;
 }
 /* remember to define focus styles! */
 :focus {
@@ -55,6 +56,7 @@ blockquote, q {
 }
 
 #container {
+		margin-top: 9px;
     	margin-left: auto;
     	margin-right: auto;
         width: 600px;
@@ -66,8 +68,9 @@ blockquote, q {
 	background-color: #51473d;
 	background-image: url(pics/coffey.jpg);
 	background-repeat: no-repeat;
-	height: 257px;
+	height: 237px;		/* Total height 257px with paddings */
 	position: relative;
+	border-bottom: 1px solid #FFFFFF;
 }
 
 #topbar {
@@ -78,17 +81,52 @@ blockquote, q {
     font-style: italic;
 }
    
-#menu ul {
+#content {
+    background: #eae7d2;
+}
+
+/* HEAD MENU */
+
+    #menu ul {
 	position:absolute;
-	bottom: 0px;
+	bottom: -1px;
+	margin-left: 11px;
+
+    font-size: 13px;
+    font-family: Verdana, Geneva, sans-serif;
+    text-transform: capitalize;
 }
 
 #menu li {
 	display: inline;
+
 }
-
-
-
-#content {
-    background: #eae7d2;
-}
+    
+    #menu ul li a {
+    	display: inline-block;
+        background: #797066;
+        text-decoration: none;
+        padding: 10px 20px 8px 20px;
+        float:left;
+        margin-right: 1px;
+        border-top: 1px solid #847c73;
+        color: #eae7d2;
+    }
+    
+    #menu ul li a:hover {
+        color: #eae7d2;
+        background: #9c9084;
+        cursor: hand;
+    }
+    
+    #menu ul li a:active {
+        border-left-color: #1F5873;
+        color: #1F5873;
+        background: #c4c4c4;
+    }
+    
+    #menu li.active a {
+        color: #888076;
+        background: #eae7d2;
+        border-bottom: 1px solid #eae7d2;
+    }
