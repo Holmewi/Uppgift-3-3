@@ -1,1 +1,94 @@
-/* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
+@charset "UTF-8";
+/* CSS Document */
+/*
+    Body: #fcfaf4
+    Content: #eae7d2
+    Topbar: #51473d
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: #fcfaf4;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+#container {
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 600px;
+        height: 100%;
+        border: solid 1px #cecab9;
+    }
+
+#menu{
+	background-color: #51473d;
+	background-image: url(pics/coffey.jpg);
+	background-repeat: no-repeat;
+	height: 257px;
+	position: relative;
+}
+
+#topbar {
+    height: 20px;
+    background: #51473d;
+    text-align: right;
+    color: #eae7d2;
+    font-style: italic;
+}
+   
+#menu ul {
+	position:absolute;
+	bottom: 0px;
+}
+
+#menu li {
+	display: inline;
+}
+
+
+
+#content {
+    background: #eae7d2;
+}
